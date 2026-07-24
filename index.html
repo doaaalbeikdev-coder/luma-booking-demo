@@ -14,6 +14,10 @@
   --primary:#425466;
   --primary2:#6B7280;
   --primarySoft:#EEF2F6;
+
+  --accent:#5F9E9A;
+  --accent2:#7CB7B2;
+  --accentSoft:#E8F4F2;
   --border:#E4E7EC;
   --success:#157F5B;
   --successSoft:#E8F5F0;
@@ -529,6 +533,113 @@ html,body{
 
 @media(max-width:350px){
   .kpis{grid-template-columns:1fr!important}
+}
+
+
+/* Neutral + lively accent system */
+.quick-icon{
+  background:var(--accentSoft)!important;
+  color:var(--accent)!important;
+}
+.quick:nth-child(2) .quick-icon{
+  background:#EDF4F8!important;
+  color:#527A8A!important;
+}
+.quick:nth-child(3) .quick-icon{
+  background:#F2F5EA!important;
+  color:#71805A!important;
+}
+
+.choice:hover,
+.choice.selected,
+.staff-choice:hover,
+.staff-choice.selected{
+  border-color:var(--accent)!important;
+  background:var(--accentSoft)!important;
+}
+
+.date-card:hover,
+.date-card.selected{
+  border-color:var(--accent)!important;
+  background:var(--accentSoft)!important;
+  color:#356F6C!important;
+}
+
+.time-choice:hover,
+.time-choice.selected{
+  background:var(--accent)!important;
+  border-color:var(--accent)!important;
+  color:#fff!important;
+}
+
+.fill,
+.bar{
+  background:linear-gradient(180deg,var(--accent2),var(--accent))!important;
+}
+
+.progress-step.active{
+  color:var(--accent)!important;
+}
+.progress-step.active .num{
+  background:var(--accent)!important;
+  color:#fff!important;
+}
+
+.day-toggle.active{
+  background:var(--accentSoft)!important;
+  border-color:var(--accent)!important;
+  color:#356F6C!important;
+}
+
+.booking-availability-note{
+  background:var(--accentSoft)!important;
+  color:#356F6C!important;
+}
+
+.btn.secondary{
+  background:var(--accentSoft)!important;
+  color:#356F6C!important;
+}
+
+.mobile-booking-btn{
+  background:var(--accentSoft)!important;
+  color:#356F6C!important;
+}
+
+.kpi:nth-child(2) .kpi-icon{
+  background:var(--accentSoft)!important;
+  color:var(--accent)!important;
+}
+
+.kpi:nth-child(3) .kpi-icon{
+  background:#EDF4F8!important;
+  color:#527A8A!important;
+}
+
+.next-card{
+  background:linear-gradient(145deg,#F4F8F8,#FFFFFF)!important;
+  border-color:#DDEBEA!important;
+}
+
+.service-cover.cover1{background:linear-gradient(135deg,#607D8B,#78909C)!important}
+.service-cover.cover2{background:linear-gradient(135deg,#5F9E9A,#7CB7B2)!important}
+.service-cover.cover3{background:linear-gradient(135deg,#6B7280,#8B95A1)!important}
+.service-cover.cover4{background:linear-gradient(135deg,#5D8290,#78A0AD)!important}
+.service-cover.cover5{background:linear-gradient(135deg,#7C8566,#A3AE84)!important}
+
+.hero-copy,
+.booking-hero{
+  background:linear-gradient(135deg,#425466,#5F7C86)!important;
+}
+
+.brandmark,
+.mobile-brandmark,
+.sidebar .customer-btn{
+  background:linear-gradient(135deg,#425466,#5F9E9A)!important;
+}
+
+.setting .toggle:checked{
+  background:var(--accent)!important;
 }
 
 </style>
